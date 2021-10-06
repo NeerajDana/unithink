@@ -16,7 +16,7 @@ export default function SideBar() {
   useEffect(() => {
     axios
       .get(
-        `https://api.yfret.com/wishlist/view_wishlist/?access_key=e191921352124a06a09bb811a86a5c3a&user_id=1628495970886`
+        `https://api.yfret.com/wishlist/view_collection/?access_key=e191921352124a06a09bb811a86a5c3a&user_id=1328495971111`
       )
       .then((a) => setCollections(a.data?.data));
     return () => {};
